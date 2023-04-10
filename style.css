@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --seconday-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body{
+    font-family: 'Poppins' , sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+    color: var(--primary-text-color);
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 1.25rem;
+    color: var(--seconday-text-color);
+    line-height: 1.8rem;        /* Increases gap between lines in p */
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Utility Classes */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-family: 'Roboto' , sans-serif;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;        /* Left and right margin */
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex  {
+    display: flex;
+    align-items: center;
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px 24px;
+    color: white !important;            /* Important is used because below color is again defined to black, so to avoid this it is used */
+    box-shadow: 0 0 2px var(--seconday-text-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    border: 0.5px solid var(--primary-text-color);
+    color: var(--primary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover{
+    border: 0.5px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* Top banner */
+
+.top-banner{
+    background-image: url('./assets/asset\ 32.png');
+    background-color: #4aa9c8;
+    background-size: 300px;
+}
+
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* nav bar */
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;         /* To add space between logo and navigation tab */
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+.hover-links{
+    color: var(--primary-text-color);
+}
+
+.hover-links:hover{
+    color: var(--accent-color);
+    transition: 0.2 ease-out;
+}
+
+/* Header section*/
+
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+
+.header-left a{
+    margin-top: 20px;
+}
+
+.header-right img{
+    width: 600px;
+}
+
+
+/* Companies Section */
+
+.companies-header{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    color: var(--primary-text-color);
+}
+
+.logos {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.logo{
+    height: 40px;
+}
+
+/* Features section */
+
+.features-section{
+    padding: 200px var(--padding-inline-section) 0;
+    background-image: url(./assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px;
+}
+
+.features-section img{
+    width: 40px;
+}
+
+.features-header{
+    text-align: center;
+}
+
+.features-header h2{
+    margin-bottom: 20px;
+}
+
+.features-area{
+    padding: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+/* big feature section */
+.big-feature-section{
+    padding: 20px var(--padding-inline-section) 0;
+    margin-bottom: 20px;
+}
+
+.big-feature-container{
+    gap: 30px;
+}
+
+.feature-img img{
+    width: 100%;
+}
+
+.features-desc{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.chart-mogul-image{
+    height: 25%;
+    width: 25%;
+}
+
+.chart-mogul{
+    width: 70%;
+    background-image: url(./assets/asset\ 35.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.nick-franklin{
+    height: 40%;
+    width: 40%;
+}
+
+.philips-image{
+    height: 13%;
+    width: 13%;
+}
+
+.chart-mogul p{
+    color: var(--primary-text-color);
+}
+
+/* examples section */
+
+.examples-header{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.example-area{
+    margin-block: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.example-area a{
+    width: 23%;
+    position: relative;
+    min-height: 330px;
+    background-color: black;
+    background-size: 300px;
+}
+
+.example-area a:hover{
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.397);
+    transition: 0.2 ease-out;
+}
+
+.example-card h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+/* cta section */
+
+.cta-section{
+    margin-top: 60px;
+    width: 100%;
+    flex-direction: column;
+    height: 500px;
+    background-color: var(--primary-text-color);
+}
+
+.cta-section-container{
+    gap: 100px;
+}
+
+.cta-section-container h2{
+    color: white;
+}
+
+.cta-section p{
+    color: rgba(158, 184, 200, 0.793);
+}
+
+.text-part{
+    margin-top: 80px ;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1000px;
+}
+
+.picture-part img{ 
+    width: 100%;
+}
+
+.cta-section-1-container{
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+
+/* Footer section */
+
+.footer-section{
+    background-color: #ebf2fa;
+    padding-block: 80px;
+}
+
+.footer-section-container{
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* sub footer */
+
+.sub-footer{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+
+.sub-footer-container{
+    justify-content: center;
+    gap: 30px;
+}
+
+
